@@ -28,6 +28,22 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+
+    public function hasRole($role)
+    {
+        return $this->role == $role;
+    }
+
+    public function isAdmin()
+    {
+        return $this->role == 'admin';
+    }
+
+    public function news()
+    {
+        return $this->hasMany('App\News');
+    }
+
     /**
      * The attributes that should be cast to native types.
      *
