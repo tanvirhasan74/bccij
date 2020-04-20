@@ -4,14 +4,18 @@ namespace App\Http\Controllers;
 use App\News;
 use Illuminate\Http\Request;
 use App\Http\Requests\NewsData;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
     public function index()
     {
-        $news = DB::table('news')->get();
-        return view('news.index', ['news' => $news]);
+        $newslist = DB::table('news')->get();
+        //$newslist = App\News::all();
+        error_log($newslist);
+        return view('news.index')
+                    ->with('newspack', $newslist);
     }
     public function create()
     {
@@ -30,5 +34,10 @@ class NewsController extends Controller
 
        // return redirect()->route('reports.show', $report);
        return redirect()->route('home');
+    }
+    public function destroy(News $news)
+    {
+        $news->delete();
+        return redirect()->route('news.index');
     }
 }
