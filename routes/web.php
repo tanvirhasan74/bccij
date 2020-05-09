@@ -11,16 +11,36 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/', 'StartController@index')->name('index');
+Route::get('/ExecutiveMembers', function () {
+    return view('executiveMembers');
 });
+
+Route::get('/About', function () {
+    return view('about');
+});
+Route::get('/SteeringCommittee', function () {
+    return view('about');
+});
+Route::get('/Constitution', function () {
+    return view('constitution');
+    });
+Route::get('/Constitution', function () {
+    return view('constitution');
+    });
+Route::get('/MembershipInstruction', function () {
+    return view('membershipInstruction');
+    });
+Route::get('/News&Events','NewsController@indexFront')->name('News&Events');
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/news','NewsController@index');
+Route::get('/news','NewsController@index')->name('newsHome');
 Route::get('/news/create','NewsController@create');
 Route::post('/news','NewsController@store');
-Route::get('/news/delete','NewsController@destroy');
+Route::post('/news/delete','NewsController@deleteNews')->name('deleteNews');
 
 

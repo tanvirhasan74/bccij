@@ -13,8 +13,16 @@ class NewsController extends Controller
     {
         $newslist = DB::table('news')->get();
         //$newslist = App\News::all();
-        error_log($newslist);
+        
         return view('news.index')
+                    ->with('newspack', $newslist);
+    }
+    public function indexFront()
+    {
+        $newslist = DB::table('news')->get();
+        //$newslist = App\News::all();
+        
+        return view('news_events')
                     ->with('newspack', $newslist);
     }
     public function create()
@@ -33,11 +41,24 @@ class NewsController extends Controller
         $news = $request->user()->news()->save(new News($newsdata));
 
        // return redirect()->route('reports.show', $report);
-       return redirect()->route('home');
+       return redirect()->route('newsHome');
     }
+
+
     public function destroy(News $news)
     {
         $news->delete();
-        return redirect()->route('news.index');
+        return redirect()->route('newsHome');
+    }
+
+    public function deleteNews(Request $request)
+    {
+        //$news = DB::table('news')->where('id', $request->id)->first();
+
+        $news=News::find($request->id);
+        $news->delete();
+        return redirect()->route('newsHome');
+
+
     }
 }

@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-                <a class="btn btn-primary" href="{{ url('news/create') }}" role="button">News</a>
+                <a class="btn btn-primary" href="{{ url('news') }}" role="button">News</a>
 
 
                 <div class="card-body">
