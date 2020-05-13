@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    <h1> posts</h1>
+                   
                    
                     <table class="table table-striped">
                         <thead>

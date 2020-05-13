@@ -39,70 +39,60 @@
    
     
     <!-- Start Main Top -->
-    <header class="main-header" style="background-color:royalblue;">
+    <header class="main-header" >
         <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-default bootsnav">
             <div class="container">
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-            <a class="navbar-brand" href=""><img src="{{asset('')}}" class="logo" alt=""></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/bccij-logo.png')}}" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
                         <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">The BCCIJ</a>
+                            <a href="#" class="nav-link dropdown-hover" data-toggle="dropdown">The BCCIJ</a>
                             <ul class="dropdown-menu">
-								<li><a href="{{url('/About')}}">About BCCIJ</a></li>
-								<li><a href="shop-detail.html">Steering Committee</a></li>
-                                <li><a href="my-account.html">The Constitution</a></li>
+                                <li><a href="{{url('/About')}}">About BCCIJ</a></li>
+								<li><a href="{{url('/SteeringCommittee')}}">Executive Members</a></li>
+                                <li><a href="{{url('/Constitution')}}">The Constitution</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Membership</a>
                             <ul class="dropdown-menu">
-								<li><a href="checkout.html">Instruction</a></li>
-								<li><a href="wishlist.html">Membership Application</a></li>
+								<li><a href="{{url('/MembershipInstruction')}}">Instruction</a></li>
+								<li><a href="{{url('/register')}}">Membership Application</a></li>
                             </ul>
                         </li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/News&Events') }}">News & Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/News&Events')}}">News & Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li >
+								
+                            @if (Route::has('login'))
+                            <div class="top-right links">
+                                @auth
+                                <li class="nav-item" ><i class="glyphicon glyphicon-user"></i><a class="nav-link" href="{{ url('/home') }}">{{ Auth::user()->name }}</a></li>
+                                @else
+                                <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                                @endauth
+                            </div>
+                            @endif
+                       
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
 
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="side-menu">
-								
-								@if (Route::has('login'))
-                                <div class="top-right links">
-                                    @auth
-                                    <li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">{{ Auth::user()->name }}</a></li>
-                                    @else
-                                        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-                                        
-
-                                        @if (Route::has('register'))
-                                            <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
-                                        @endif
-                                    @endauth
-                                </div>
-                                    @endif
-							</a>
-						</li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
+                
+              
             </div>
-           
         </nav>
         <!-- End Navigation -->
     </header>
@@ -112,18 +102,23 @@
     <div class="container">
         <div class="row">
             @foreach($newspack as $news )
-            <div class="col-md-6 col-lg-3 mb-3">
-                <div class="card" style="margin-bottom:20px"  >
-                    <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="200px" width="100% ">
-                        <div class="card-body">
-                            <h4 class="card-title">{{$news->title}}</h4>
-                            <p class="card-text">{{ substr($news->description,0,50) }}</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-sm btn-secondary">Read More</a>
-                            <p class="pull-right">{{ Carbon\Carbon::parse($news->created_at)->toFormattedDateString() }}</p>
-                         </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:5px" >
+                
+                <div class="card" style="margin-bottom:5px"  >
+                <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="180px" width="100% ">
+                    <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
+                        <h2 class="card-title">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
+                        <p class="card-text" style="font-size: 15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
+                    </div>    
                 </div>
+                <div class="row" >
+                    <div class="col-4">
+                        <a  href="{{route('newsdetails',['newsid'=>$news->id])}}" class="btn btn-sm btn-danger">Read More</a>
+                    </div>
+                    <div class="col-8" class="pull-right">
+                        <p ><small class="text-muted">{{ Carbon\Carbon::parse($news->created_at)->toFormattedDateString() }}</small></p>
+                    </div>      
+                </div>       
             </div>
     
             
@@ -131,20 +126,23 @@
         </div>
     </div>
 
+    <br><br><br><br>
+
     <!-------------------------------------------->
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- ALL JS FILES -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/jquery.superslides.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/inewsticker.js"></script>
-    <script src="js/bootsnav.js."></script>
-    <script src="js/images-loded.min.js"></script>
-    <script src="js/isotope.min.js"></script>
+    <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+    
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <!-- ALL PLUGINS -->
+    <script src="{{asset('js/jquery.superslides.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap-select.js')}}"></script>
+    <script src="{{asset('js/inewsticker.js')}}"></script>
+    <script src="{{asset('js/bootsnav.js')}}"></script>
+
+    <script src="'{{asset('js/isotope.min.js')}}'"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/baguetteBox.min.js"></script>
     <script src="js/form-validator.min.js"></script>

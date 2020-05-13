@@ -48,30 +48,30 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo-bccij.png')}}" class="logo" alt=""></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/bccij-logo.png')}}" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-hover" data-toggle="dropdown">The BCCIJ</a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{url('/About')}}">About BCCIJ</a></li>
-								<li><a href="{{url('/SteeringCommittee')}}">Steering Committee</a></li>
+								<li><a href="{{url('/SteeringCommittee')}}">Executive Members</a></li>
                                 <li><a href="{{url('/Constitution')}}">The Constitution</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Membership</a>
                             <ul class="dropdown-menu">
-								<li><a href="checkout.html">Instruction</a></li>
-								<li><a href="wishlist.html">Membership Application</a></li>
+								<li><a href="{{url('/MembershipInstruction')}}">Instruction</a></li>
+								<li><a href="{{url('/register')}}">Membership Application</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Press & Notice</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/News&Events')}}">News & Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                         <li >
 								

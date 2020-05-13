@@ -3,14 +3,15 @@
 <div class="container">
     
     <a class="btn btn-primary" href="{{ url('news/create') }}" role="button">Add a News</a>
+    <br><br>
     <div class="row">
         @foreach($newspack as $news )
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="card">    
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="200px" width="100% ">
                 <div class="card-body">
-                    <h4 class="card-title">{{$news->title}}</h4>
-                    <p class="card-text">{{ substr($news->description,0,50) }}</p>
+                    <h4 class="card-title" style="font-size: 18px">{{$news->title}}</h4>
+                    <p class="card-text" style="font-size: 12px">{{ substr($news->description,0,50) }}</p>
                     
                     <div></div>
                 </div>

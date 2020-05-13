@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #b3ecff">
    
     
     <!-- Start Main Top -->
@@ -48,19 +48,19 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo-bccij.png')}}" class="logo" alt=""></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/bccij-logo.png')}}" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-hover" data-toggle="dropdown">The BCCIJ</a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{url('/About')}}">About BCCIJ</a></li>
-								<li><a href="{{url('/SteeringCommittee')}}">Steering Committee</a></li>
+								<li><a href="{{url('/SteeringCommittee')}}">Executive Members</a></li>
                                 <li><a href="{{url('/Constitution')}}">The Constitution</a></li>
                             </ul>
                         </li>
@@ -68,7 +68,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Membership</a>
                             <ul class="dropdown-menu">
 								<li><a href="{{url('/MembershipInstruction')}}">Instruction</a></li>
-								<li><a href="wishlist.html">Membership Application</a></li>
+								<li><a href="{{url('/register')}}">Membership Application</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{url('/News&Events')}}">News & Events</a></li>
@@ -98,9 +98,8 @@
     </header>
     <!-- End Main Top -->
 
-
-
-    <!-- Start Slider -->
+    <div style="background-color: white;width:70%;margin: 0 auto;">
+        <!-- Start Slider -->
     <div id="demo" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
@@ -113,13 +112,13 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="slideimg" src="images/slide1.jpg" alt="Los Angeles">
+            <img class="slideimg" src="images/slide1.jpg" alt="">
           </div>
           <div class="carousel-item">
-            <img class="slideimg" src="images/slide2.jpg" alt="Chicago" >
+            <img class="slideimg" src="images/t3.jpg" alt="" >
           </div>
           <div class="carousel-item">
-            <img class="slideimg" src="images/slide3.jpg" alt="New York" >
+            <img class="slideimg" src="images/t2.jpg" alt="" >
           </div>
         </div>
         
@@ -138,9 +137,9 @@
            <!-- Start Categories  -->
     <div class="categories-shop" >
         <div class="container">
-            <div class="row">
+            <div class="row" style="background-color: white">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h2 style="color:sienna;">Message From President</h2>
+                    <h3 style="color:sienna;"><b>Message From Embassador</b></h3>
                     
                     <div class="card"  >
                     <img class="card-img-top" src="{{asset('images/img-1.jpg')}}" alt="Card image" style="width:100%;height:200px ">
@@ -151,36 +150,28 @@
                     </div>   
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h2 style="color:sienna;">Message From President</h2>
+                    <h3 style="color:sienna;"><b>Message From President</b></h3>
                     
                     <div class="card"  >
-                    <img class="card-img-top" src="{{asset('images/img-1.jpg')}}" alt="Card image" style="width:100%;height:200px ">
+                    <img class="card-img-top" src="{{asset('images/10.png')}}" alt="Card image" style="width:100%;height:200px ">
                     <div class="card-body">
                         <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
                     </div>
                         <a href="#" class="btn btn-primary">View Details</a>      
                     </div>   
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h2 style="color:sienna;">Message From President</h2>
+                
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     
-                    <div class="card"  >
-                    <img class="card-img-top" src="{{asset('images/img-1.jpg')}}" alt="Card image" style="width:100%;height:200px ">
-                    <div class="card-body">
-                        <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
-                    </div>
-                        <a href="#" class="btn btn-primary">View Details</a>      
-                    </div>   
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h2 style="color:sienna;">Message From President</h2>
-                    
-                    <div class="card"  >
-                    <img class="card-img-top" src="{{asset('images/img-1.jpg')}}" alt="Card image" style="width:100%;height:200px ">
-                    <div class="card-body">
-                    <p class="card-text"   style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
-                    </div>
-                        <a href="#" class="btn btn-primary">View Details</a>      
+                    <div class="card" style="height: 90%;margin-top:30px"  >
+                        <div class="card-body">
+                            <h2 class="card-title" style="color: red">Important Notice</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link">view more</a>
+                            
+                          </div>
                     </div>   
                 </div>
             </div>
@@ -195,27 +186,26 @@
         <h3 ><b>News & Events</b> </h3>
         <div class="row">
             @foreach($newspack as $news )
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:5px" >
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:45px" >
                 
-                    <div class="card" style="margin-bottom:5px"  >
-                    <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="200px" width="100% ">
-                        <div class="card-body">
-                            <h2 class="card-title">{{$news->title}}</h2>
-                            <p class="card-text">{{ substr($news->description,0,50) }}</p>
-                        </div>    
+                <div class="card" style="margin-bottom:5px;height:100%"  >
+                <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="180px" width="100% ">
+                    <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
+                        <h2 class="card-title">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
+                        <p class="card-text" style="font-size: 15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
+                    </div>    
+                </div>
+                <div class="row" >
+                    <div class="col-4">
+                        <a  href="{{route('newsdetails',['newsid'=>$news->id])}}" class="btn btn-sm btn-danger">Read More</a>
                     </div>
-                    <div class="row" >
-                        <div class="col-4">
-                            <a  href="" class="btn btn-sm btn-danger">Read More</a>
-                        </div>
-                        <div class="col-8" class="pull-right">
-                            <p ><small class="text-muted">{{ Carbon\Carbon::parse($news->created_at)->toFormattedDateString() }}</small></p>
-                        </div>      
-                    </div>
-                    
-                      
+                    <div class="col-8" class="pull-right">
+                        <p ><small class="text-muted">{{ Carbon\Carbon::parse($news->created_at)->toFormattedDateString() }}</small></p>
+                    </div>      
+                </div>       
             </div>
-          
+    
+            
             @endforeach
         </div>
     </div>
@@ -228,92 +218,6 @@
     
 
 
-    <!-- Start Instagram Feed  -->
-    <div class="instagram-box">
-        <div class="main-instagram owl-carousel owl-theme">
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-01.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-02.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-03.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-04.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-06.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-07.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-08.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-09.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Instagram Feed  -->
 
     <!--------------------------->
 
@@ -379,6 +283,9 @@
         </div>
     </div>
     <!-- End Logo Block  -->
+    </div>
+
+    
 
 
     <!--------------------------->

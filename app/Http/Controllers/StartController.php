@@ -10,7 +10,7 @@ class StartController extends Controller
 {
     public function index()
     {
-        $newslist = DB::table('news')->limit(8)->get();
+        $newslist = DB::table('news')->limit(8)->latest()->get();
         //$newslist = App\News::all();
        //$msg=file_get_contents('president.txt');
        $message = \Illuminate\Support\Facades\File::get(base_path() . '/public/messages/president.txt');

@@ -21,14 +21,12 @@ Route::get('/About', function () {
     return view('about');
 });
 Route::get('/SteeringCommittee', function () {
-    return view('about');
+    return view('steeringCommittee');
 });
 Route::get('/Constitution', function () {
     return view('constitution');
     });
-Route::get('/Constitution', function () {
-    return view('constitution');
-    });
+
 Route::get('/MembershipInstruction', function () {
     return view('membershipInstruction');
     });
@@ -42,5 +40,6 @@ Route::get('/news','NewsController@index')->name('newsHome');
 Route::get('/news/create','NewsController@create');
 Route::post('/news','NewsController@store');
 Route::post('/news/delete','NewsController@deleteNews')->name('deleteNews');
+Route::get('/news/{newsid}','NewsController@newsdetails')->name('newsdetails');
 
 

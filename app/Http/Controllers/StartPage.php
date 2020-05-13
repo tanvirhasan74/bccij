@@ -9,7 +9,7 @@ class StartPage extends Controller
 {
     public function index()
     {
-        $newslist = DB::table('news')->get();
+        $newslist = DB::table('news')->latest()->get();
         //$newslist = App\News::all();
         
         return view('news.index')

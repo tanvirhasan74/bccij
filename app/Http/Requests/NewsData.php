@@ -24,8 +24,8 @@ class NewsData extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string|max:200',
-            'description' => 'required|string|max:2000',
+            'title' => 'required|string|max:400',
+            'description' => 'required|string|max:6000',
             'image' => 'image',
         ];
     }

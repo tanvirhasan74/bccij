@@ -48,30 +48,30 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo-bccij.png')}}" class="logo" alt=""></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/bccij-logo.png')}}" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-hover" data-toggle="dropdown">The BCCIJ</a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{url('/About')}}">About BCCIJ</a></li>
-								<li><a href="{{url('/SteeringCommittee')}}">Steering Committee</a></li>
-                                <li><a href="my-account.html">The Constitution</a></li>
+								<li><a href="{{url('/SteeringCommittee')}}">Executive Members</a></li>
+                                <li><a href="{{url('/Constitution')}}">The Constitution</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Membership</a>
                             <ul class="dropdown-menu">
-								<li><a href="checkout.html">Instruction</a></li>
-								<li><a href="wishlist.html">Membership Application</a></li>
+								<li><a href="{{url('/MembershipInstruction')}}">Instruction</a></li>
+								<li><a href="{{url('/register')}}">Membership Application</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Press & Notice</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/News&Events')}}">News & Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                         <li >
 								
@@ -99,16 +99,8 @@
     <!-- End Main Top -->
 
 
-
     <div class="all-title-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Steering Committee</h2>
-                    
-                </div>
-            </div>
-        </div>
+        
     </div>
     <!-- End All Title Box -->
 
@@ -123,20 +115,101 @@
             <li><span class="fa-li"><i class="far fa-square"></i></span>Bangladesh Embassy- H.E Ambassador</li>
           </ul>
         <h1 class="text">Advisers:</h1>
-        <ul id="obj2" class="fa-ul" style="font-size: 20px;font-family:'poppins',sans-serif;line-height: 2;">
-            <li><span class="fa-li"><i class="far fa-square"></i></span>Mr. BADAL CHAKLADER <br>  (President)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span> Mr. SHEIKH MONJUR MORSHED <br>(Vice President)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span> Mr. MOHAMMED ABDUR RAZZAK <br>(Vice President)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>Mr. AHSAN SHAMEEM (JOSEPH)<br>(Vice President)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span> Mr. HAKIM MD. NASIRUL <br>(General Secretary)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>Mr. KAZI ENAMUL HOQUE <br>(Joint Secretary)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span> Mr. THAKUR GUL MOHAMMAD (MONI) <br>(Treasurer)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>Mr. HAQUE MD. SANAUL <br>(Cultural & Publication)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>Mr. MIR REZAUL KARIM <br>(Executive Member)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>Mr. CHOWDHURYSHAHIN <br>(Executive Member)</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>Mr. MIZANUR RAHMAN SHAHIN <br>(Executive Member) </li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>RUNA AHMED <br>(AUDITOR)</li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/10.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. BADAL CHAKLADER</b></span>
+                       
+                    </div>
+                    <span>President</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/6.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. SHEIKH MONJUR MORSHED</b></span>
+                       
+                    </div>
+                    <span>Vice President</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/3.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. MOHAMMED ABDUR RAZZAK</b></span>
+                       
+                    </div>
+                    <span>Vice President</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/9.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. AHSAN SHAMEEM (JOSEPH)</b></span>
+                       
+                    </div>
+                    <span>Vice President</span>
+                </div>
+                
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/4.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. HAKIM MD. NASIRUL</b></span>
+                       
+                    </div>
+                    <span>General Secretary</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/8.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. KAZI ENAMUL HOQUE</b></span>
+                       
+                    </div>
+                    <span>Joint Secretary</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/2.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>THAKUR GUL MOHAMMAD (MONI)</b></span>
+                       
+                    </div>
+                    <span>Treasurer</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/11.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. HAQUE MD. SANAUL</b></span>
+                       
+                    </div>
+                    <span>Cultural and Publication</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/5.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. MIR REZAUL KARIM</b></span>
+                       
+                    </div>
+                    <span>Executive Member</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/1.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. CHOWDHURY SHAHIN</b></span>
+                       
+                    </div>
+                    <span>Executive Member</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="{{asset('images/7.png')}}" style="height:144px; width:160px">
+                        <span class="color_name"><b>Mr. MIZANUR RAHMAN SHAHIN</b></span>
+                       
+                    </div>
+                    <span>Executive Member</span>
+                </div>
+            </div>
+        </div>
+        
         </div>
         </div> 
     </div>

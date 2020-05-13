@@ -45,11 +45,7 @@ class NewsController extends Controller
     }
 
 
-    public function destroy(News $news)
-    {
-        $news->delete();
-        return redirect()->route('newsHome');
-    }
+    
 
     public function deleteNews(Request $request)
     {
@@ -60,5 +56,15 @@ class NewsController extends Controller
         return redirect()->route('newsHome');
 
 
+    }
+    public function newsdetails(Request $request,$newsid)
+    {
+        //$news=News::find($request->id);
+        //$news = DB::table('news')->where('id',$request->id)->first();
+        $news = News::whereid($newsid)->first();
+        return view('news_details')
+                    ->with( 'newstitle',$news->title)
+                    ->with('newsdescription', $news->description)
+                    ->with('newsimage',$news->image_url);
     }
 }

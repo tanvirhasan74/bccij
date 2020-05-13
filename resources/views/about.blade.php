@@ -39,70 +39,60 @@
    
     
     <!-- Start Main Top -->
-    <header class="main-header" style="background-color:royalblue;">
+    <header class="main-header" >
         <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-default bootsnav">
             <div class="container">
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-            <a class="navbar-brand" href=""><img src="{{asset('')}}" class="logo" alt=""></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/bccij-logo.png')}}" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
                         <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">The BCCIJ</a>
+                            <a href="#" class="nav-link dropdown-hover" data-toggle="dropdown">The BCCIJ</a>
                             <ul class="dropdown-menu">
-								<li><a href="shop.html">About BCCIJ</a></li>
-								<li><a href="shop-detail.html">Steering Committee</a></li>
-                                <li><a href="my-account.html">The Constitution</a></li>
+                                <li><a href="{{url('/About')}}">About BCCIJ</a></li>
+								<li><a href="{{url('/SteeringCommittee')}}">Executive Members</a></li>
+                                <li><a href="{{url('/Constitution')}}">The Constitution</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Membership</a>
                             <ul class="dropdown-menu">
-								<li><a href="checkout.html">Instruction</a></li>
-								<li><a href="wishlist.html">Membership Application</a></li>
+								<li><a href="{{url('/MembershipInstruction')}}">Instruction</a></li>
+								<li><a href="{{url('/register')}}">Membership Application</a></li>
                             </ul>
                         </li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/News&Events') }}">News & Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/News&Events')}}">News & Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li >
+								
+                            @if (Route::has('login'))
+                            <div class="top-right links">
+                                @auth
+                                <li class="nav-item" ><i class="glyphicon glyphicon-user"></i><a class="nav-link" href="{{ url('/home') }}">{{ Auth::user()->name }}</a></li>
+                                @else
+                                <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                                @endauth
+                            </div>
+                            @endif
+                       
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
 
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="side-menu">
-								
-								@if (Route::has('login'))
-                                <div class="top-right links">
-                                    @auth
-                                    <li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">{{ Auth::user()->name }}</a></li>
-                                    @else
-                                        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-                                        
-
-                                        @if (Route::has('register'))
-                                            <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
-                                        @endif
-                                    @endauth
-                                </div>
-                                    @endif
-							</a>
-						</li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
+                
+              
             </div>
-           
         </nav>
         <!-- End Navigation -->
     </header>
@@ -140,16 +130,17 @@
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- ALL JS FILES -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/jquery.superslides.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/inewsticker.js"></script>
-    <script src="js/bootsnav.js."></script>
-    <script src="js/images-loded.min.js"></script>
-    <script src="js/isotope.min.js"></script>
+    <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+    
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <!-- ALL PLUGINS -->
+    <script src="{{asset('js/jquery.superslides.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap-select.js')}}"></script>
+    <script src="{{asset('js/inewsticker.js')}}"></script>
+    <script src="{{asset('js/bootsnav.js')}}"></script>
+
+    <script src="'{{asset('js/isotope.min.js')}}'"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/baguetteBox.min.js"></script>
     <script src="js/form-validator.min.js"></script>

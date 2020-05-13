@@ -2692,7 +2692,7 @@ and (orientation:portrait)
 
 
 nav.navbar .navbar-brand img.logo{
-    width: 180px;
+    width: 200px;
 }
 
 .bg-light{
@@ -2702,6 +2702,11 @@ nav.navbar .navbar-brand img.logo{
 nav.navbar.bootsnav{
     height:85px;
 }
+@media only screen and (max-width: 767px) {
+    nav.navbar.bootsnav{
+        height:90px;
+    }
+  }
 
 
 
