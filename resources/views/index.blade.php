@@ -189,8 +189,7 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:45px" >
                 
                 <div class="card" style="margin-bottom:5px;height:100%"  >
-                    
-                <img src="{{ Storage::url("/storage/app/images/{$news->image_url}") }}" class="card-img-top" height="180px" width="100% ">
+                <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="180px" width="100% ">
                     <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
                         <h2 class="card-title">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
                         <p class="card-text" style="font-size: 15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
