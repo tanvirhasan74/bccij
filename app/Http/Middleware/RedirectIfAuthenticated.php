@@ -17,17 +17,12 @@ class RedirectIfAuthenticated
      * @return mixed
      */
     public function handle($request, Closure $next, $guard = null)
-    {
+    {   
         if (Auth::guard($guard)->check()) {
-            if(Auth::status()=='active')
-            {
-                return redirect(RouteServiceProvider::HOME);
-            }
-            if(Auth::status()=='pending')
-            {
-                return view('pending_user');
-            }
-            
+            $user=Auth::user();
+            if($user->status=='active')
+            //return redirect(RouteServiceProvider::HOME); 
+            return view('pending_user');  
         }
 
         return $next($request);

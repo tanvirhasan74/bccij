@@ -34,12 +34,16 @@ Route::get('/News&Events','NewsController@indexFront')->name('News&Events');
 
 
 Auth::routes();
-
+Route::get('/pending_user', function(){
+    return view('pending_user');
+});
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/news','NewsController@index')->name('newsHome');
 Route::get('/news/create','NewsController@create');
 Route::post('/news','NewsController@store');
 Route::post('/news/delete','NewsController@deleteNews')->name('deleteNews');
 Route::get('/news/{newsid}','NewsController@newsdetails')->name('newsdetails');
+Route::get('/activateuser/{userid}','HomeController@activateUser')->name('activateUser');
+
 
 

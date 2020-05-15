@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -24,7 +25,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users = DB::table('users')->get();
-        return view('home', ['users' => $users]);
+        $activeusers = DB::table('users')->where('status','active')->get();
+        $pendingusers = DB::table('users')->where('status','pending')->get();
+        return view('home', ['activeusers' => $activeusers,'pendingusers'=>$pendingusers]);
+    }
+    public function activateUser(Request $request,$userid)
+    {
+        $user = User::whereid($userid)->first();
+        $user->status='active';
+        $user->save();
+        return redirect()->route('home');
+
     }
 }
