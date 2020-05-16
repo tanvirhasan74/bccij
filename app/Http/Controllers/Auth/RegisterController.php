@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\File;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
@@ -64,10 +66,27 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+       // $imagePath = $data->moneyReceipt->store();
+       $request = app('request');
+       $file=$data['moneyReceipt'];
+        
+        $imagePath = $request->file('moneyReceipt')->store('MoneyReceipt');
+      
+
+        error_log($data['moneyReceipt']);
         return User::create([
             'name' => $data['name'],
-            'email' => $data['email'],
+            'email' => $data['email'],  
+            'companyName'=>$data['companyName'],
+            'nameCEO'=> $data['nameCEO'],
+            'businessCategory'=> $data['businessCategory'],
+            'address' => $data['address'],
+            'mobile' => $data['mobile'],
+            'transferDate' => $data['transferDate'],
+            'moneyReceipt' => $imagePath ?? '',
             'password' => Hash::make($data['password']),
+            
+            
         ]);
     }
 }

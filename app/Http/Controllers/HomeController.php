@@ -37,4 +37,9 @@ class HomeController extends Controller
         return redirect()->route('home');
 
     }
+    public function pendingUserDetails(Request $request,$userid)
+    {
+        $user = User::whereid($userid)->first();
+        return view('pending_userinfo', ['userinfo' => $user]);
+    }
 }

@@ -43,6 +43,7 @@
                 </div>
             </div>
         </div>
+        @if(Auth::user()->hasRole('admin'))
         <div col-md-4>
 
             <h2>New Application</h2>
@@ -58,7 +59,7 @@
                     @if(count($activeusers)>0)
                     @foreach($pendingusers as $user)
                         <tr>
-                            <td>{{$user->name}}</td>
+                            <td><a href="{{route('pendingUserDetails',['userid'=>$user->id])}}">{{$user->name}}</a></td>
                             <td>{{$user->email}}</td>
                             <td><a  href="{{route('activateUser',['userid'=>$user->id])}}"class="btn btn-sm btn-danger" >Activate</a></td>
                         </tr>
@@ -68,6 +69,7 @@
                    
                     @endif
         </div>
+        @endif
     </div>
 </div>
 @endsection

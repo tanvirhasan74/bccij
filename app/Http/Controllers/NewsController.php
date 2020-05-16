@@ -35,6 +35,7 @@ class NewsController extends Controller
         if ($request->hasFile('image')) {
             $imagePath = $request->image->store('images');
         }
+        error_log($imagePath);
         $newsdata = $request->validated();
         $newsdata['image_url'] = $imagePath ?? '';
         
