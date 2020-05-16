@@ -39,11 +39,12 @@ Route::get('/pending_user', function(){
 });
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/news','NewsController@index')->name('newsHome');
-Route::get('/news/create','NewsController@create');
+Route::get('/news/create','NewsController@create'); 
 Route::post('/news','NewsController@store');
 Route::post('/news/delete','NewsController@deleteNews')->name('deleteNews');
 Route::get('/news/{newsid}','NewsController@newsdetails')->name('newsdetails');
 Route::get('/activateuser/{userid}','HomeController@activateUser')->name('activateUser');
+Route::get('/pendingUserDetails/{userid}','HomeController@pendingUserDetails')->name('pendingUserDetails');
 
 
 

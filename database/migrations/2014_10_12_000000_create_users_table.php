@@ -21,6 +21,13 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('role')->default('user');
             $table->string('status')->default('pending');
+            $table->string('companyName');
+            $table->string('nameCEO');
+            $table->string('businessCatagory');
+            $table->string('address');
+            $table->string('mobile');
+            $table->string('transferDate');
+            $table->string('moneyReceipt');
             $table->rememberToken();
             $table->timestamps();
         });
