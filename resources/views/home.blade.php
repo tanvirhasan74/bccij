@@ -43,6 +43,7 @@
                 </div>
             </div>
         </div>
+        @if(Auth::user()->hasRole('admin'))
         <div col-md-4>
 
             <h2>New Application</h2>
@@ -68,6 +69,7 @@
                    
                     @endif
         </div>
+        @endif
     </div>
 </div>
 @endsection
