@@ -101,7 +101,7 @@
 
     <div style="background-color: white;margin: 0 auto;" class="whole">
         <!-- Start Slider -->
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2800">
 
         <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -147,7 +147,7 @@
                     <div class="card-body">
                         <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
                     </div>  
-                        <a href="#" class="btn btn-primary">View Details</a>      
+                        <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View Details</a>      
                     </div>   
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -158,7 +158,7 @@
                     <div class="card-body">
                         <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
                     </div>
-                        <a href="#" class="btn btn-primary">View Details</a>      
+                        <a href="{{url('presidentmessage')}}" class="btn btn-primary">View Details</a>      
                     </div>   
                 </div>
                 

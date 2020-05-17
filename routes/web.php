@@ -37,6 +37,14 @@ Auth::routes();
 Route::get('/pending_user', function(){
     return view('pending_user');
 });
+Route::get('/ambassadormessage', function () {
+    return view('ambassador_message');
+    });
+
+Route::get('/presidentmessage', function () {
+        return view('president_message');
+        });
+
 Route::get('/contactUs', function(){
     return view('contactUs');
 });

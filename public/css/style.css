@@ -3100,6 +3100,8 @@ ul.cart-list>li.total>.btn:hover {
     margin-left: 30px;
 }
 
+<<<<<<< HEAD
+=======
 @media only screen and (max-width: 767px) {
     .carousel-inner {
         width: 100%;
@@ -3158,3 +3160,4 @@ nav.navbar.bootsnav {
         width: 75px;
     }
 }
+>>>>>>> 2f2b1deccc0719254bf59fae434ce82a7e5dd4e7

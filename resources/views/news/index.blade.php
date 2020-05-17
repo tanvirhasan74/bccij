@@ -7,7 +7,7 @@
     <div class="row">
         @foreach($newspack as $news )
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="card">    
+            <div class="card" style="height: 100%">    
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="200px" width="100% ">
                 <div class="card-body">
                     <h4 class="card-title" style="font-size: 18px">{{$news->title}}</h4>
