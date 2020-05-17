@@ -101,16 +101,15 @@
     
 
     <div class="container">
-        <h3 ><b>News & Events</b> </h3>
-        <div class="row" style="justify-content:center">
-           <h1>{{$newstitle}} </h3> 
-        </div>
-        <div class="row">
-        <img src="{{ asset('storage/' . $newsimage) }}"  style= "width:800px; margin:0 auto" > 
-        </div>
-        <div class="row">
-            <p>{{$newsdescription}}</p>
-        </div>
+        <h2>Contact Us</h2>
+        <p  style="margin :0 auto">
+            Bangladesh Chamber of Commerce and Industry in Japan (BCCIJ)
+            <br>
+            New Kanda Bldg 302, 3-3Kanda Kaji-cho,Chiyoda-Ku,Tokyo 101-0045<br>
+            Tel: +81-3-3527-1655 Fax: +81-3-3527-1699<br>
+            URL: http://www.bccij.com<br>
+            e-mail : info@bccij.com
+        </p>
     </div>
    
 

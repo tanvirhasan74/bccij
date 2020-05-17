@@ -35,7 +35,7 @@
 
 </head>
 
-<body style="background-color: #b3ecff">
+<body  class="fullBody">
    
     
     <!-- Start Main Top -->
@@ -48,7 +48,8 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/bccij-logo.png')}}" class="logo" alt=""></a>
+                <a class="navbar-brand" href="{{url('/')}}" style="font-size:30px;font-weight:bold;font-style:italic;"><img src="{{asset('images/logo-bccij.png')}}" class="logo"   alt="">BCCIJ </a>
+                
                 </div>
                 <!-- End Header Navigation -->
 
@@ -72,7 +73,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{url('/News&Events')}}">News & Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('contactUs')}}">Contact Us</a></li>
                         <li >
 								
                             @if (Route::has('login'))
@@ -98,7 +99,7 @@
     </header>
     <!-- End Main Top -->
 
-    <div style="background-color: white;width:70%;margin: 0 auto;">
+    <div style="background-color: white;margin: 0 auto;" class="whole">
         <!-- Start Slider -->
     <div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2800">
 
@@ -110,7 +111,7 @@
   </ul>
         
         <!-- The slideshow -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" >
           <div class="carousel-item active">
             <img class="slideimg" src="images/slide1.jpg" alt="">
           </div>
@@ -163,9 +164,13 @@
                 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     
-                    <div class="card" style="height: 90%;margin-top:30px"  >
+                    <div class="card" style="height: 90%;margin-top:30px;border:5px solid slategray;"  >
                         <div class="card-body">
+<<<<<<< HEAD
                             <h2 class="card-header" style="color: red;background-color:black">Important Notice</h5>
+=======
+                            <h2 class="card-title" style="color: red;background-color:black;">Important Notice</h5>
+>>>>>>> 2f2b1deccc0719254bf59fae434ce82a7e5dd4e7
                             <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -188,11 +193,17 @@
             @foreach($newspack as $news )
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:45px" >
                 
-                <div class="card" style="margin-bottom:5px;height:100%"  >
+                <div class="card" style="margin-bottom:5px;height:90%"  >
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="180px" width="100% ">
+<<<<<<< HEAD
                     <div class="card-body" style="height:125px; line-height:20px;">
                         <h2 class="card-title">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
                         <p class="card-text" style="font-size: 15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
+=======
+                    <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
+                        <h2 class="card-title" style="text-align:left;font-size: medium;padding-top:0px;">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
+                        <p class="card-text" style="font-size:15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
+>>>>>>> 2f2b1deccc0719254bf59fae434ce82a7e5dd4e7
                     </div>    
                 </div>
                 <div class="row" >

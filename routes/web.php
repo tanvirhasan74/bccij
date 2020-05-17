@@ -37,6 +37,7 @@ Auth::routes();
 Route::get('/pending_user', function(){
     return view('pending_user');
 });
+<<<<<<< HEAD
 Route::get('/ambassadormessage', function () {
     return view('ambassador_message');
     });
@@ -45,6 +46,11 @@ Route::get('/ambassadormessage', function () {
         return view('president_message');
         });
 
+=======
+Route::get('/contactUs', function(){
+    return view('contactUs');
+});
+>>>>>>> 2f2b1deccc0719254bf59fae434ce82a7e5dd4e7
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/news','NewsController@index')->name('newsHome');
 Route::get('/news/create','NewsController@create'); 
