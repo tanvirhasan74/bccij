@@ -166,11 +166,7 @@
                     
                     <div class="card" style="height: 90%;margin-top:30px;border:5px solid slategray;"  >
                         <div class="card-body">
-<<<<<<< HEAD
-                            <h2 class="card-header" style="color: red;background-color:black">Important Notice</h5>
-=======
                             <h2 class="card-title" style="color: red;background-color:black;">Important Notice</h5>
->>>>>>> 2f2b1deccc0719254bf59fae434ce82a7e5dd4e7
                             <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -195,15 +191,9 @@
                 
                 <div class="card" style="margin-bottom:5px;height:90%"  >
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="180px" width="100% ">
-<<<<<<< HEAD
-                    <div class="card-body" style="height:125px; line-height:20px;">
-                        <h2 class="card-title">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
-                        <p class="card-text" style="font-size: 15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
-=======
                     <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
                         <h2 class="card-title" style="text-align:left;font-size: medium;padding-top:0px;">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
                         <p class="card-text" style="font-size:15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
->>>>>>> 2f2b1deccc0719254bf59fae434ce82a7e5dd4e7
                     </div>    
                 </div>
                 <div class="row" >
