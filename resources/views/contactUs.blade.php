@@ -98,11 +98,24 @@
     </header>
     <!-- End Main Top -->
 
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact Us</h2>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+
     
 
     <div class="container">
-        <h2>Contact Us</h2>
-        <p  style="margin :0 auto">
+    
+        <p  style="margin-top: 30px">
             Bangladesh Chamber of Commerce and Industry in Japan (BCCIJ)
             <br>
             New Kanda Bldg 302, 3-3Kanda Kaji-cho,Chiyoda-Ku,Tokyo 101-0045<br>
