@@ -37,6 +37,9 @@ Auth::routes();
 Route::get('/pending_user', function(){
     return view('pending_user');
 });
+Route::get('/contactUs', function(){
+    return view('contactUs');
+});
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/news','NewsController@index')->name('newsHome');
 Route::get('/news/create','NewsController@create'); 
