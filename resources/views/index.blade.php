@@ -100,7 +100,7 @@
 
     <div style="background-color: white;width:70%;margin: 0 auto;">
         <!-- Start Slider -->
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2800">
 
         <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -146,7 +146,7 @@
                     <div class="card-body">
                         <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
                     </div>  
-                        <a href="#" class="btn btn-primary">View Details</a>      
+                        <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View Details</a>      
                     </div>   
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -157,7 +157,7 @@
                     <div class="card-body">
                         <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
                     </div>
-                        <a href="#" class="btn btn-primary">View Details</a>      
+                        <a href="{{url('presidentmessage')}}" class="btn btn-primary">View Details</a>      
                     </div>   
                 </div>
                 
@@ -165,7 +165,7 @@
                     
                     <div class="card" style="height: 90%;margin-top:30px"  >
                         <div class="card-body">
-                            <h2 class="card-title" style="color: red">Important Notice</h5>
+                            <h2 class="card-header" style="color: red;background-color:black">Important Notice</h5>
                             <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -190,7 +190,7 @@
                 
                 <div class="card" style="margin-bottom:5px;height:100%"  >
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="180px" width="100% ">
-                    <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
+                    <div class="card-body" style="height:125px; line-height:20px;">
                         <h2 class="card-title">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
                         <p class="card-text" style="font-size: 15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
                     </div>    
