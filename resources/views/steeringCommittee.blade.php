@@ -39,16 +39,26 @@
    
     
     <!-- Start Main Top -->
+    <div class="logoBlock" style="margin:auto;">
+        <div class="navbar-header">
+                    
+                <a class="navbar-brand" href="{{url('/')}}" style="font-size:30px;font-weight:bold;font-style:italic;margin:0 75px;"><img src="{{asset('images/logo-bccij.png')}}" style="width:50%;" class="logo"   alt="">BCCIJ </a>
+                
+                </div>        
+
+    </div>
     <header class="main-header" >
         <!-- Start Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-default bootsnav">
             <div class="container">
                 <!-- Start Header Navigation -->
+                
                 <div class="navbar-header">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/bccij-logo.png')}}" class="logo" alt=""></a>
+                
+                
                 </div>
                 <!-- End Header Navigation -->
 
@@ -72,7 +82,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{url('/News&Events')}}">News & Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('contactUs')}}">Contact Us</a></li>
                         <li >
 								
                             @if (Route::has('login'))
@@ -99,16 +109,14 @@
     <!-- End Main Top -->
 
 
-    <div class="all-title-box">
-        
-    </div>
+    
     <!-- End All Title Box -->
 
     <!-- Start Committee Detail  -->
     <div class="shop-detail-box-main">
-        <div class="container">
+        <div class="container" id="containerAbout">
            
-        <h2 class="text" style="border:4px solid black;background-color: aliceblue;">New Executive Members & Advisers of BCCIJ</h2>
+        <h2 class="text" >New Executive Members & Advisers of BCCIJ</h2>
         <div class="data">
         <h1 class="text">Chief Patron:</h1>
         <ul id="obj" class="fa-ul" style="font-size: 20px;font-family:'poppins',sans-serif;">
