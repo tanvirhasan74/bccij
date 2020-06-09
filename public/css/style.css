@@ -393,8 +393,15 @@ p {
     font-size: 13px;
 }
 
+.logoBlock {
+    background-color: white;
+    width: 70%;
+}
+
 .main-header {
     background-color: red;
+    width: 70%;
+    margin: auto;
 }
 
 .search a {
@@ -636,7 +643,7 @@ nav.navbar.bootsnav ul.nav>li>a {
     position: relative;
     font-weight: 700;
     font-size: 16px;
-    color: #800000;
+    color: white;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -3074,6 +3081,10 @@ ul.cart-list>li.total>.btn:hover {
     color: red;
 }
 
+#containerAbout {
+    width: 70%;
+}
+
 .container h2 {
     text-align: center;
     font-weight: bold;
@@ -3140,11 +3151,11 @@ nav.navbar .navbar-brand img.logo {
 }
 
 .bg-light {
-    background-color: rgb(239, 204, 62)!important;
+    background-color: #2a9df4!important;
 }
 
 nav.navbar.bootsnav {
-    height: 85px;
+    height: 45px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3154,7 +3165,17 @@ nav.navbar.bootsnav {
     .whole {
         width: 100%;
     }
+    .logoBlock {
+        width: auto;
+    }
+    .main-header {
+        width: auto;
+    }
     nav.navbar .navbar-brand img.logo {
         width: 75px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3b428fa0ac1ee51508dd7a02d10e13cff5e52fbb
