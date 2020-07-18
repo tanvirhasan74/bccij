@@ -12,10 +12,11 @@ class StartController extends Controller
     {
         $newslist = DB::table('news')->limit(8)->latest()->get();
         //$newslist = App\News::all();
-       //$msg=file_get_contents('president.txt');
        $message = \Illuminate\Support\Facades\File::get(base_path() . '/public/messages/president.txt');
+       $notice = \Illuminate\Support\Facades\File::get(base_path() . '/public/storage/important_notice.txt');
+       error_log($notice);
         $msg="hibfb  ibuiwbuibruefbeiurie iebauibueribuerbifuq rnfireabubreiubirebuer jbbijbfribrre irberire ";
-        $data=array('newspack'=>$newslist, 'message'=>$message,'msg'=>$msg);
+        $data=array('newspack'=>$newslist, 'message'=>$message,'notice'=>$notice);
         return view('index')
                     ->with($data);
     }

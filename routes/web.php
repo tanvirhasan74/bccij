@@ -56,6 +56,12 @@ Route::post('/news/delete','NewsController@deleteNews')->name('deleteNews');
 Route::get('/news/{newsid}','NewsController@newsdetails')->name('newsdetails');
 Route::get('/activateuser/{userid}','HomeController@activateUser')->name('activateUser');
 Route::get('/pendingUserDetails/{userid}','HomeController@pendingUserDetails')->name('pendingUserDetails');
+Route::post('/notice', 'HomeController@postNotice');
+
+Route::get('/notice', function () {
+    return view('notice');
+    });
+
 
 
 

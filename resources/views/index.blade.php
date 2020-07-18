@@ -41,8 +41,12 @@
     <!-- Start Main Top -->
     <div class="logoBlock" style="margin:auto;">
         <div class="navbar-header">
-                    
+            <Span>
                 <a class="navbar-brand" href="{{url('/')}}" style="font-size:30px;font-weight:bold;font-style:italic;margin:0 75px;"><img src="{{asset('images/logo-bccij.png')}}" style="width:50%;" class="logo"   alt="">BCCIJ </a>
+                <a><p>Bangladesh Chamber of Commerce and Industry Japan</p></a>
+            </Span>
+                    
+
                 
                 </div>        
 
@@ -128,7 +132,16 @@
             <img class="slideimg" src="images/t3.jpg" alt="" >
           </div>
           <div class="carousel-item">
-            <img class="slideimg" src="images/t2.jpg" alt="" >
+            <img class="slideimg" src="images/JP_6.jpg" alt="" >
+          </div>
+          <div class="carousel-item">
+            <img class="slideimg" src="images/JP_2.jpg" alt="" >
+          </div>
+          <div class="carousel-item">
+            <img class="slideimg" src="images/JP_3.jpg" alt="" >
+          </div>
+          <div class="carousel-item">
+            <img class="slideimg" src="images/JP8.jpg" alt="" >
           </div>
         </div>
         
@@ -232,6 +245,7 @@
     <!--------------------------->
 
     <!-- Start Logo Block  -->
+    <!-- Start Logo Block  -->
     <div class="products-box">
         <div class="container">
             <h3 ><b>Useful Links</b> </h3>
@@ -271,8 +285,8 @@
                 <div class="col-lg-3 col-md-6 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
-                            <a href="http://ygn-jpn-association.com/" target="_blank">
-                            <img src="{{asset('images/yangon.png')}}" class="img-fluid" alt="Image" style="padding-top: 16px;">
+                            <a href="http://fbcci.org/" target="_blank">
+                            <img src="{{asset('images/FBCCI.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 16px;">
                             </a>
                         </div>
                     </div>
@@ -281,8 +295,18 @@
                 <div class="col-lg-3 col-md-6 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
-                            <a href="http://neoyjs.web.fc2.com/" target="_blank">
-                            <img src="{{asset('images/yangon-school.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
+                            <a href="https://www.mofa.go.jp/" target="_blank">
+                            <img src="{{asset('images/ministry.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <a href="https://www.chittagongchamber.com/" target="_blank">
+                            <img src="{{asset('images/CtgBccij.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
                             </a>
                         </div>
                     </div>
@@ -292,6 +316,7 @@
             </div>
         </div>
     </div>
+    <!-- End Logo Block  -->
     <!-- End Logo Block  -->
     </div>
 
@@ -305,93 +330,13 @@
     <footer>
         <div class="footer-main">
             <div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="footer-top-box">
-							<h3>Business Time</h3>
-							<ul class="list-time">
-								<li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="footer-top-box">
-							<h3>Newsletter</h3>
-							<form class="newsletter-box">
-								<div class="form-group">
-									<input class="" type="email" name="Email" placeholder="Email Address*" />
-									<i class="fa fa-envelope"></i>
-								</div>
-								<button class="btn hvr-hover" type="submit">Submit</button>
-							</form>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="footer-top-box">
-							<h3>Social Media</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<ul>
-                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                            </ul>
-						</div>
-					</div>
-				</div>
-				<hr>
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-widget">
-                            <h4>About Freshshop</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link">
-                            <h4>Information</h4>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                <li><a href="#">Our Sitemap</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Delivery Information</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link-contact">
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			
+					<p> All rights reserved by BCCIJ</p>
+
+			</div>
         </div>
     </footer>
     <!-- End Footer  -->
-
-    <!-- Start copyright  -->
-    <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
-            <a href="https://html.design/">html design</a></p>
-    </div>
-    <!-- End copyright  -->
 
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 

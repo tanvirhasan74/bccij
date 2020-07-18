@@ -6,6 +6,8 @@
         <div class="col-md-8">
             @if(Auth::user()->hasRole('admin'))
             <a class="btn btn-lg btn-primary" href="{{ url('news') }}" role="button">Manage News</a>
+            <a class="btn btn-lg btn-primary" href="{{ url('notice') }}" role="button">Post Notice</a>
+
             @endif
             <div class="card">
                 <div class="card-header" style="text-align: center"><h2>Current Active Members</h2></div>
