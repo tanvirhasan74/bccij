@@ -209,6 +209,7 @@
          border-color: #b0b435;
          color: #010101;
          border-radius: 0px;
+         margin-top: auto;
          margin-right: 7px;
          padding-top: 6px;
 		 padding-bottom: 6px;
@@ -219,6 +220,7 @@
      nav.navbar.bootsnav .navbar-nav{
          padding: 0px;
          margin: 0px;
+         background-color: black;
     }
      .cover-slides h1{
          font-size: 28px;

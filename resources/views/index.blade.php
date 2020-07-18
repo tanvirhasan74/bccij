@@ -39,16 +39,17 @@
    
     
     <!-- Start Main Top -->
-    <div class="logoBlock" style="margin:auto;">
-        <div class="navbar-header">
-            <Span>
-                <a class="navbar-brand" href="{{url('/')}}" style="font-size:30px;font-weight:bold;font-style:italic;margin:0 75px;"><img src="{{asset('images/logo-bccij.png')}}" style="width:50%;" class="logo"   alt="">BCCIJ </a>
-                <a><p>Bangladesh Chamber of Commerce and Industry Japan</p></a>
-            </Span>
+    <div class="logoBlock" style="margin:auto; display:flex;">
+        <div class="navbar-header" style="width:165px;">
                     
-
+                <a class="navbar-brand" href="{{url('/')}}" ><img src="{{asset('images/logo-bccij.png')}}" style="width:110px;" class="logo"   alt=""></a>
                 
-                </div>        
+        </div>  
+
+        <div class="LogoTitle" style="margin-top: 8px;font-weight: bold;">
+            <p>BCCIJ</p>
+            <p id="LogoTitleLong" >Bangladesh Chamber of Commerce and Industry Japan</p>
+        </div>      
 
     </div>
     <header class="main-header" >
@@ -189,10 +190,9 @@
                     <div class="card" style="height: 90%;margin-top:30px;border:5px solid slategray;"  >
                         <div class="card-body">
                             <h2 class="card-title" style="color: red;background-color:black;">Important Notice</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">view more</a>
+                            {{-- <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6> --}}
+                            <p class="card-text">{{substr($notice,0,50)}}</p>
+                            {{-- <a href="#" class="card-link">view more</a> --}}
                             
                           </div>
                     </div>   
