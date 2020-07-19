@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+
+
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -163,25 +166,25 @@
         <div class="container">
             <div class="row" style="background-color: white">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h3 style="color:sienna;"><b>Message From Embassador</b></h3>
+                    <h3 style="color:sienna;"><b style="font-size: 17px">Message From Embassador</b></h3>
                     
                     <div class="card"  >
                     <img class="card-img-top" src="{{asset('images/img-1.jpg')}}" alt="Card image" style="width:100%;height:200px ">
                     <div class="card-body">
                         <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
                     </div>  
-                        <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View Details</a>      
+                        <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View More</a>      
                     </div>   
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h3 style="color:sienna;"><b>Message From President</b></h3>
+                    <h3 style="color:sienna;"><b style="font-size: 17px;">Message From President</b></h3>
                     
                     <div class="card"  >
                     <img class="card-img-top" src="{{asset('images/10.png')}}" alt="Card image" style="width:100%;height:200px ">
                     <div class="card-body">
                         <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
                     </div>
-                        <a href="{{url('presidentmessage')}}" class="btn btn-primary">View Details</a>      
+                        <a href="{{url('presidentmessage')}}" class="btn btn-primary">View More</a>      
                     </div>   
                 </div>
                 

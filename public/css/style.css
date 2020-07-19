@@ -29,15 +29,21 @@
 @import url(nice-select.css);
 @import url(baguetteBox.min.css);
 
+
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
 
 body {
+
     color: #666666;
     font-size: 15px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif, 'SolaimanLipi', 'Hiragino Kaku Gothic ProN', '游ゴシック体', 'YuGothic' !important;
     line-height: 1.80857;
+
+
 }
 
 .fullBody {
