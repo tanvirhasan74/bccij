@@ -4,10 +4,9 @@
     </IfModule>
 
     RewriteEngine On
-
-    #redirecting non www request to www
-    RewriteCond %{HTTP_HOST} ^bccij.com [NC]
-    RewriteRule ^(.*)$ http://www.bccij.com/$1 [L,R=301]
+    #redirect non www to www
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
