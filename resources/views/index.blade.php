@@ -139,10 +139,10 @@
             <img class="slideimg" src="images/JP_6.jpg" alt="" >
           </div>
           <div class="carousel-item">
-            <img class="slideimg" src="images/JP_2.jpg" alt="" >
+            <img class="slideimg" src="images/mount_fuji.jpg" alt="" >
           </div>
           <div class="carousel-item">
-            <img class="slideimg" src="images/JP_3.jpg" alt="" >
+            <img class="slideimg" src="images/port_chittagong.png" alt="" >
           </div>
           <div class="carousel-item">
             <img class="slideimg" src="images/JP8.jpg" alt="" >
