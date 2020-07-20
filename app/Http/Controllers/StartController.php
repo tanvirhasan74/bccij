@@ -16,7 +16,6 @@ class StartController extends Controller
        $ambassador_message = \Illuminate\Support\Facades\File::get(base_path() . '/public/messages/ambassador.txt');
        $notice = \Illuminate\Support\Facades\File::get(base_path() . '/public/storage/important_notice.txt');
        error_log($notice);
-        $msg="hibfb  ibuiwbuibruefbeiurie iebauibueribuerbifuq rnfireabubreiubirebuer jbbijbfribrre irberire ";
         $data=array('newspack'=>$newslist, 'president_message'=>$president_message,'ambassador_message'=>$ambassador_message,'notice'=>$notice);
         return view('index')
                     ->with($data);

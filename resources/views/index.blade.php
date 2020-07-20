@@ -194,7 +194,7 @@
                         <div class="card-body">
                             <h2 class="card-title" style="color: red;background-color:black;">Important Notice</h5>
                             {{-- <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6> --}}
-                            <p class="card-text">{{substr($notice,0,50)}}</p>
+                            <p class="card-text">{{substr($notice,0,500)}}</p>
                             {{-- <a href="#" class="card-link">view more</a> --}}
                             
                           </div>
