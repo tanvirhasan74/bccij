@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    #redirecting non www request to www
+    RewriteCond %{HTTP_HOST} ^bccij.com [NC]
+    RewriteRule ^(.*)$ http://www.bccij.com/$1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
