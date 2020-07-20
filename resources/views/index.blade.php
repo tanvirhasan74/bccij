@@ -169,9 +169,9 @@
                     <h3 style="color:sienna;"><b style="font-size: 17px">Message From Embassador</b></h3>
                     
                     <div class="card"  >
-                    <img class="card-img-top" src="{{asset('images/img-1.jpg')}}" alt="Card image" style="width:100%;height:200px ">
+                    <img class="card-img-top" src="{{asset('images/ambassador.jpg')}}" alt="Card image" style="width:100%;height:200px ">
                     <div class="card-body">
-                        <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
+                        <p class="card-text"  style="line-height:1"><small>{{substr($ambassador_message,0,50)}} </small> </p>
                     </div>  
                         <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View More</a>      
                     </div>   
@@ -182,7 +182,7 @@
                     <div class="card"  >
                     <img class="card-img-top" src="{{asset('images/10.png')}}" alt="Card image" style="width:100%;height:200px ">
                     <div class="card-body">
-                        <p class="card-text"  style="line-height:1"><small>{{substr($message,0,50)}} </small> </p>
+                        <p class="card-text"  style="line-height:1"><small>{{substr($president_message,0,50)}} </small> </p>
                     </div>
                         <a href="{{url('presidentmessage')}}" class="btn btn-primary">View More</a>      
                     </div>   
@@ -258,8 +258,8 @@
                 <div class="col-lg-3 col-md-6 special-grid best-seller" >
                     <div class="products-single fix">
                         <div class="box-img-hover">
-                            <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank">
-                            <img src="{{asset('images/embassy.png')}}" class="img-fluid" alt="Image" style="padding-top: 25px;">
+                            <a href="http://bdembjp.mofa.gov.bd/" target="_blank">
+                            <img src="{{asset('images/embassy.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 25px;">
                             </a>
                         </div>
                     </div>
@@ -298,8 +298,8 @@
                 <div class="col-lg-3 col-md-6 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
-                            <a href="https://www.mofa.go.jp/" target="_blank">
-                            <img src="{{asset('images/ministry.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
+                            <a href="https://www.bd.emb-japan.go.jp/itprtop_en/index.html" target="_blank">
+                            <img src="{{asset('images/japan_embassy.png')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
                             </a>
                         </div>
                     </div>
