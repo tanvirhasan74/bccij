@@ -19,7 +19,7 @@ class NewsController extends Controller
     }
     public function indexFront()
     {
-        $newslist = DB::table('news')->get();
+        $newslist = DB::table('news')->latest()->get();
         //$newslist = App\News::all();
         
         return view('news_events')

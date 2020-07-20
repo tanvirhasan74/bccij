@@ -217,8 +217,8 @@
                 <div class="card" style="margin-bottom:5px;height:90%"  >
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" style= "border: 2px solid darkslateblue;"height="180px" width="100% ">
                     <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
-                        <h2 class="card-title" style="text-align:left;font-size: medium;padding-top:0px;">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
-                        <p class="card-text" style="font-size:15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
+                        <h2 class="card-title" style="text-align:left;font-size: medium;padding-top:0px;">{{\Illuminate\Support\Str::limit($news->title, $limit = 55, $end = '...')}}</h2>
+                        <p class="card-text" style="font-size:15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 60, $end = '...')}}</p>
                     </div>    
                 </div>
                 <div class="row" >

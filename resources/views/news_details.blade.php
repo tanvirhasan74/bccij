@@ -42,12 +42,17 @@
    
     
     <!-- Start Main Top -->
-    <div class="logoBlock" style="margin:auto;">
-        <div class="navbar-header">
+    <div class="logoBlock" style="margin:auto; display:flex;">
+        <div class="navbar-header" style="width:165px;">
                     
-                <a class="navbar-brand" href="{{url('/')}}" style="font-size:30px;font-weight:bold;font-style:italic;margin:0 75px;"><img src="{{asset('images/logo-bccij.png')}}" style="width:50%;" class="logo"   alt="">BCCIJ </a>
+                <a class="navbar-brand" href="{{url('/')}}" ><img src="{{asset('images/logo-bccij.png')}}" style="width:110px;" class="logo"   alt=""></a>
                 
-                </div>        
+        </div>  
+
+        <div class="LogoTitle" style="margin-top: 8px;font-weight: bold;">
+            <p>BCCIJ</p>
+            <p id="LogoTitleLong" >Bangladesh Chamber of Commerce and Industry Japan</p>
+        </div>      
 
     </div>
     <header class="main-header" >

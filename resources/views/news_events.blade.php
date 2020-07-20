@@ -39,12 +39,17 @@
    
     
     <!-- Start Main Top -->
-    <div class="logoBlock" style="margin:auto;">
-        <div class="navbar-header">
+    <div class="logoBlock" style="margin:auto; display:flex;">
+        <div class="navbar-header" style="width:165px;">
                     
-                <a class="navbar-brand" href="{{url('/')}}" style="font-size:30px;font-weight:bold;font-style:italic;margin:0 75px;"><img src="{{asset('images/logo-bccij.png')}}" style="width:50%;" class="logo"   alt="">BCCIJ </a>
+                <a class="navbar-brand" href="{{url('/')}}" ><img src="{{asset('images/logo-bccij.png')}}" style="width:110px;" class="logo"   alt=""></a>
                 
-                </div>        
+        </div>  
+
+        <div class="LogoTitle" style="margin-top: 8px;font-weight: bold;">
+            <p>BCCIJ</p>
+            <p id="LogoTitleLong" >Bangladesh Chamber of Commerce and Industry Japan</p>
+        </div>      
 
     </div>
     <header class="main-header" >
@@ -109,16 +114,17 @@
     <!-- End Main Top -->
     <!-------------------------------------------->
 
-    <div class="container">
+    <div class="container" style="margin-top: 25px">
+        <h3 ><b>News & Events</b> </h3>
         <div class="row">
             @foreach($newspack as $news )
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:5px" >
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:45px" >
                 
-                <div class="card" style="margin-bottom:5px"  >
-                <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" height="180px" width="100% ">
+                <div class="card" style="margin-bottom:5px;height:90%"  >
+                <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" style= "border: 2px solid darkslateblue;"height="180px" width="100% ">
                     <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
-                        <h2 class="card-title">{{\Illuminate\Support\Str::limit($news->title, $limit = 40, $end = '...')}}</h2>
-                        <p class="card-text" style="font-size: 15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 40, $end = '...')}}</p>
+                        <h2 class="card-title" style="text-align:left;font-size: medium;padding-top:0px;">{{\Illuminate\Support\Str::limit($news->title, $limit = 55, $end = '...')}}</h2>
+                        <p class="card-text" style="font-size:15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 60, $end = '...')}}</p>
                     </div>    
                 </div>
                 <div class="row" >
