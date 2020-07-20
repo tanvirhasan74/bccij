@@ -116,12 +116,15 @@
     <div class="container" id="containerAbout">
         <br><br>
         <div class="row">
-            <div>
-                <img src="{{asset('images/img-1.jpg')}}">
-                <span>
+            <div >
+                <img src="{{asset('images/ambassador.jpg')}}" style="width: 200px">
+                <br>
+                <span>Dr. Sahida Akter</span>
+                <br>
+                <span>Ambassador, Bangladesh Embassy, Japan </span>
             </div>
-            <div>
-                <p style="margin-bottom: 50px">
+            <div style="margin-bottom: 50px">
+                <p>
                     {{\Illuminate\Support\Facades\File::get(base_path() . '/public/messages/ambassador.txt')}}
                 </p>
             </div>
