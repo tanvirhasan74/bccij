@@ -181,7 +181,7 @@
                     
                     <div class="card"  >
                     <img class="card-img-top" src="{{asset('images/10.png')}}" alt="Card image" style="width:100%;height:200px ">
-                    <div class="card-body" style="padding: 0.75rem">
+                    <div class="card-body" style="padding: 0.75rem;max-height:84px">
                         <p class="card-text"  style="line-height:1"><small>{{substr($president_message,0,50)}} </small> </p>
                     </div>
                         <a href="{{url('presidentmessage')}}" class="btn btn-primary">View More</a>      
