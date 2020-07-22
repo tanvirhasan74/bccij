@@ -170,7 +170,7 @@
                     
                     <div class="card"  >
                     <img class="card-img-top" src="{{asset('images/ambassador.jpg')}}" alt="Card image" style="width:100%;height:200px ">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0.75rem">
                         <p class="card-text"  style="line-height:1"><small>{{substr($ambassador_message,0,50)}} </small> </p>
                     </div>  
                         <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View More</a>      
@@ -181,7 +181,7 @@
                     
                     <div class="card"  >
                     <img class="card-img-top" src="{{asset('images/10.png')}}" alt="Card image" style="width:100%;height:200px ">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0.75rem">
                         <p class="card-text"  style="line-height:1"><small>{{substr($president_message,0,50)}} </small> </p>
                     </div>
                         <a href="{{url('presidentmessage')}}" class="btn btn-primary">View More</a>      
@@ -191,7 +191,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     
                     <div class="card" style="height: 90%;margin-top:30px;border:5px solid slategray;"  >
-                        <div class="card-body">
+                        <div class="card-body" style="padding: 0.75rem">
                             <h2 class="card-title" style="color: red;background-color:black;">Important Notice</h5>
                             {{-- <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6> --}}
                             <p class="card-text">{{substr($notice,0,500)}}</p>
@@ -216,9 +216,9 @@
                 
                 <div class="card" style="margin-bottom:5px;height:90%"  >
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" style= "border: 2px solid darkslateblue;"height="180px" width="100% ">
-                    <div class="card-body" style="width: 100%; height:145px; line-height:20px;">
-                        <h2 class="card-title" style="text-align:left;font-size: medium;padding-top:0px;">{{\Illuminate\Support\Str::limit($news->title, $limit = 55, $end = '...')}}</h2>
-                        <p class="card-text" style="font-size:15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 60, $end = '...')}}</p>
+                    <div class="card-body" style="width: 100%; height:120px; line-height:20px;padding:0.25rem">
+                        <h2 class="card-title" style="text-align:left;font-size: medium;padding-top:0px;margin-bottom:0px">{{\Illuminate\Support\Str::limit($news->title, $limit = 55, $end = '...')}}</h2>
+                        <p class="card-text" style="font-size:15px; ">{{\Illuminate\Support\Str::limit($news->description, $limit = 80, $end = '...')}}</p>
                     </div>    
                 </div>
                 <div class="row" >
