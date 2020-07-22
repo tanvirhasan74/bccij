@@ -118,7 +118,7 @@
         <h3 ><b>News & Events</b> </h3>
         <div class="row">
             @foreach($newspack as $news )
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-bottom:45px" >
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:45px" >
                 
                 <div class="card" style="margin-bottom:5px;height:90%"  >
                 <img src="{{ asset('storage/' . $news->image_url) }}" class="card-img-top" style= "border: 2px solid darkslateblue;"height="180px" width="100% ">
