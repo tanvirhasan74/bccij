@@ -305,25 +305,6 @@ p {
 .right-phone-box p a:hover {
     color: #b0b435;
 }
-
-.offer-box,
-.slide {
-    color: #FFFFFF;
-    font-size: 13px;
-    padding: 2px 15px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.offer-box li {
-    font-weight: 600;
-}
-
-.offer-box li i {
-    margin-right: 15px;
-    color: #b0b435;
-    font-size: 20px;
-}
-
 .our-link {
     float: left;
 }
@@ -1075,25 +1056,6 @@ ul.cart-list>li.total>.btn:hover {
     padding: 70px 0px;
     background-color: #f4f4f4;
 }
-
-.offer-box {
-    position: relative;
-    overflow: hidden;
-}
-
-.offer-box-products {
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.offer-box-products:hover {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-    box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.1);
-}
-
-
 /*------------------------------------------------------------------ Products -------------------------------------------------------------------*/
 
 .title-all {
