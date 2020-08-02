@@ -318,7 +318,7 @@
                 <div class="col-lg-3 col-md-4 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
-                            <a href="https://www.chittagongchamber.com/" target="_blank">
+                            <a href="http://forms.gov.bd/" target="_blank">
                                 <img src="{{asset('images/forms.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
@@ -328,7 +328,7 @@
                 <div class="col-lg-3 col-md-4 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
-                            <a href="https://www.chittagongchamber.com/" target="_blank">
+                            <a href="https://www.bangladeshtradeportal.gov.bd/" target="_blank">
                                 <img src="{{asset('images/bd-trade-portal.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
@@ -338,7 +338,7 @@
                 <div class="col-lg-3 col-md-4 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
-                            <a href="https://www.chittagongchamber.com/" target="_blank">
+                            <a href="http://bida.gov.bd/" target="_blank">
                                 <img src="{{asset('images/bida.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
