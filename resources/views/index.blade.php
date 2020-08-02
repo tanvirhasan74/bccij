@@ -255,61 +255,91 @@
             
 
             <div class="row special-list">
-                <div class="col-lg-3 col-md-6 special-grid best-seller" >
+                <div class="col-lg-3 col-md-4 special-grid best-seller" >
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="http://bdembjp.mofa.gov.bd/" target="_blank">
-                            <img src="{{asset('images/embassy.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 25px;">
+                            <img src="{{asset('images/embassy.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 special-grid best-seller" >
+                <div class="col-lg-3 col-md-4 special-grid best-seller" >
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.jetro.go.jp/" target="_blank">
-                            <img src="{{asset('images/jetro.jpg')}}" class="img-fluid" alt="Image">
+                                <img src="{{asset('images/jetro.jpg')}}"  alt="Image" style="width:120px;height:120px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.jica.go.jp/" target="_blank">
-                            <img src="{{asset('images/jica.png')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
+                                <img src="{{asset('images/jica.png')}}"  alt="Image" style="width:120px;height:120px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="http://fbcci.org/" target="_blank">
-                            <img src="{{asset('images/FBCCI.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 16px;">
+                                <img src="{{asset('images/FBCCI.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.bd.emb-japan.go.jp/itprtop_en/index.html" target="_blank">
-                            <img src="{{asset('images/japan_embassy.png')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
+                                <img src="{{asset('images/japan_embassy.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 special-grid best-seller">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.chittagongchamber.com/" target="_blank">
-                            <img src="{{asset('images/CtgBccij.jpg')}}" class="img-fluid" alt="Image" style="padding-top: 10px;">
+                                <img src="{{asset('images/CtgBccij.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <a href="https://www.chittagongchamber.com/" target="_blank">
+                                <img src="{{asset('images/forms.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <a href="https://www.chittagongchamber.com/" target="_blank">
+                                <img src="{{asset('images/bd-trade-portal.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <a href="https://www.chittagongchamber.com/" target="_blank">
+                                <img src="{{asset('images/bida.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
@@ -318,10 +348,13 @@
                 
             </div>
         </div>
+        <a href="#" class="btn btn-secondary btn-lg " role="button" style="float: right" >Go To Web Mail</a>
+
     </div>
     <!-- End Logo Block  -->
     <!-- End Logo Block  -->
     </div>
+
 
     
 
