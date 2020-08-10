@@ -255,17 +255,17 @@
             
 
             <div class="row special-list">
-                <div class="col-lg-3 col-md-4 special-grid best-seller" >
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" >
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="http://bdembjp.mofa.gov.bd/" target="_blank">
-                            <img src="{{asset('images/embassy.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
+                            <img src="{{asset('images/mofa.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller" >
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" >
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.jetro.go.jp/" target="_blank">
@@ -275,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.jica.go.jp/" target="_blank">
@@ -285,7 +285,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="http://fbcci.org/" target="_blank">
@@ -295,7 +295,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.bd.emb-japan.go.jp/itprtop_en/index.html" target="_blank">
@@ -305,7 +305,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.chittagongchamber.com/" target="_blank">
@@ -315,31 +315,31 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="http://forms.gov.bd/" target="_blank">
-                                <img src="{{asset('images/forms.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
+                                <img src="{{asset('images/forms.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="https://www.bangladeshtradeportal.gov.bd/" target="_blank">
-                                <img src="{{asset('images/bd-trade-portal.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
+                                <img src="{{asset('images/bd_trade_portal.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 special-grid best-seller">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <a href="http://bida.gov.bd/" target="_blank">
-                                <img src="{{asset('images/bida.jpg')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
+                                <img src="{{asset('images/bida.png')}}"  alt="Image" style="width:100px;height:100px;object-fit:contain">
                             </a>
                         </div>
                     </div>
