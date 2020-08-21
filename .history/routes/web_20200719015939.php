@@ -44,9 +44,6 @@ Route::get('/ambassadormessage', function () {
 Route::get('/presidentmessage', function () {
         return view('president_message');
         });
-Route::get('/vicePresidentMessage', function () {
-            return view('vicePresident_message');
-            });
 
 Route::get('/contactUs', function(){
     return view('contactUs');
