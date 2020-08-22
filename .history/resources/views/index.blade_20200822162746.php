@@ -188,10 +188,10 @@
                     </div>   
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h3 style="color:sienna;"><b style="font-size: 17px;">Message From General Secretary</b></h3>
+                    <h3 style="color:sienna;"><b style="font-size: 17px;">Message From Vice President</b></h3>
                     
                     <div class="card"  >
-                    <img class="card-img-top" src="{{asset('images/general-secretary.jpg')}}" alt="Card image" style="width:100%;height:200px ">
+                    <img class="card-img-top" src="{{asset('images/vice-president.jpg')}}" alt="Card image" style="width:100%;height:200px ">
                     <div class="card-body" style="padding: 0.75rem;max-height:84px">
                         <p class="card-text"  style="line-height:1"><small>{{substr($generalSecretary_message,0,50)}} </small> </p>
                     </div>
