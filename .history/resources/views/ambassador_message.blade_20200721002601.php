@@ -119,7 +119,7 @@
             <div >
                 <img src="{{asset('images/ambassador.jpg')}}" style="width: 200px">
                 <br>
-                <span>H.E. Mr. Shahabuddin Ahmed</span>
+                <span>Dr. Sahida Akter</span>
                 <br>
                 <span>Ambassador, Bangladesh Embassy, Japan </span>
             </div>
