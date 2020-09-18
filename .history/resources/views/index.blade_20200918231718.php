@@ -172,11 +172,8 @@
                     <img class="card-img-top" src="{{asset('images/no_image_available.jpg')}}" alt="Card image" style="width:100%;height:200px ">
                     <div class="card-body" style="padding: 0.75rem">
                         <p class="card-text"  style="line-height:1"><small>{{substr($ambassador_message,0,50)}} </small> </p>
-                        {{-- <p class="card-text"  style="line-height:1"><small>{{substr($ambassador_message,0,50)}} </small> </p> --}}
                     </div>  
-                        <a href="" class="btn btn-primary">View More</a>      
-                        {{-- <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View More</a>       --}}
-
+                        <a href="{{url('ambassadormessage')}}" class="btn btn-primary">View More</a>      
                     </div>   
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
