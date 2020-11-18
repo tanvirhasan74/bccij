@@ -202,12 +202,16 @@
                 </div>
                 
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h3 class="card-title" style="color: red;text-align:center;background-color:black;margin-bottom:0px"><b>Important Notice</b></h3>
+                    <h2 class="card-title" style="color: red;">Important Notice</h2>
                     
-                    <div class="card" style="border:5px solid slategray;overflow:auto;height:305px"  >                            
+                    <div class="card" style="height: 90%;margin-top:30px;border:5px solid slategray;"  >
+                        <div class="card-body" style="padding: 0.75rem;overflow:auto;height:305px">
+                            
                             {{-- <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6> --}}
-                            <p class="card-text" style="font-size: 15px; text-align:justify;padding:8px">{{substr($notice,0,500)}}</p>
+                            <p class="card-text">{{substr($notice,0,500)}}</p>
                             {{-- <a href="#" class="card-link">view more</a> --}}
+                            
+                          </div>
                     </div>   
                 </div>
             </div>

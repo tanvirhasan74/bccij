@@ -202,7 +202,7 @@
                 </div>
                 
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h3 class="card-title" style="color: red;text-align:center;background-color:black;margin-bottom:0px"><b>Important Notice</b></h3>
+                    <h3 class="card-title" style="color: red;text-align:center;margin-bottom:0px"><b>Important Notice</b></h3>
                     
                     <div class="card" style="border:5px solid slategray;overflow:auto;height:305px"  >                            
                             {{-- <h6 class="card-subtitle mb-2 text-muted">*about the website release</h6> --}}
